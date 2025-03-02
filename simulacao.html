@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consequências</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Consequências de Decisões Impulsivas</h1>
-        <nav>
-            <a href="index.html">Pagina inicial</a>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/img/logo.png" alt="Desafio Consciente Logo">
+                <h1>Desafio Consciente</h1>
+            </div>
+            <a href="quiz.html" class="quiz-button">🎯 Faça o Quiz!</a>
+        </div>
     </header>
+
     <main>
-        <p>Infelizmente, muitos acidentes acontecem por decisões impensadas. Sempre pense antes de agir!</p>
-        <a href="quiz.html">Voltar ao Quiz</a>
+        <h1 id="simulacao-titulo">Consequências</h1>
+        <p id="simulacao-descricao">Aqui aparecerá o que aconteceu após a decisão tomada.</p>
+        
+        <div class="imagem-container">
+            <img id="simulacao-imagem" src="" alt="Consequência do desafio">
+        </div>
+        
+
+        <div class="botoes">
+            <a href="quiz.html" class="back-button">🔙 Voltar ao Quiz</a>
+            <a href="index.html" class="restart-button">🔄 Recomeçar</a>
+        </div>
     </main>
 
     <footer>
         <h3>Desenvolvido com ❤️ by Maria Viana</h3>
     </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>

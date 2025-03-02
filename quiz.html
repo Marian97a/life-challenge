@@ -4,23 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Interativo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Quiz Interativo</h1>
-        <nav>
-            <a href="index.html">Pagina inicial</a>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/img/logo.png" alt="Life Challenge Logo">
+                <h1>Desafio Consciente</h1>
+            </div>
+            <a href="quiz.html" class="quiz-button">🎯 Faça o Quiz!</a>
+        </div>
     </header>
+
     <main>
-        <p>Se um amigo te desafiar a pular de um lugar alto, o que você faz?</p>
-        <button onclick="responderCorretamente()">Digo não e explico os riscos.</button>
-        <button onclick="redirecionarParaSimulacao()">Aceito porque todo mundo faz.</button>
+        <h1>Quiz Interativo</h1>
+        <p>O que você faria diante desses desafios?</p>
+
+        <section class="challenges-container">
+            <div class="challenge-card">
+                <h3>🏗️ Pular de um lugar alto</h3>
+                <p>Um amigo te desafia a pular de um local perigoso.</p>
+                <button onclick="responderCorretamente()">❌ Digo não e explico os riscos.</button>
+                <button onclick="escolherDesafio('pulo-alto')">✔️ Aceito porque todo mundo faz.</button>
+            </div>
+
+            <div class="challenge-card">
+                <h3>🔥 Desafio do fogo</h3>
+                <p>Um vídeo viral incentiva a brincar com fogo perto da pele.</p>
+                <button onclick="responderCorretamente()">❌ Recuso e alerto os outros.</button>
+                <button onclick="escolherDesafio('desafio-fogo')">✔️ Tento só para ver se dá certo.</button>
+            </div>
+
+            <div class="challenge-card">
+                <h3>💊 Desafio do medicamento</h3>
+                <p>Alguém sugere tomar um remédio sem prescrição para um desafio.</p>
+                <button onclick="responderCorretamente()">❌ Não tomo e informo um adulto.</button>
+                <button onclick="escolherDesafio('desafio-remedio')">✔️ Tomo para impressionar os outros.</button>
+            </div>
+
+            <div class="challenge-card">
+                <h3>🚗 Corrida ilegal</h3>
+                <p>Um grupo propõe disputar uma corrida sem segurança.</p>
+                <button onclick="responderCorretamente()">❌ Recuso e reforço os perigos.</button>
+                <button onclick="escolherDesafio('corrida-ilegal')">✔️ Aceito porque parece divertido.</button>
+            </div>
+        </section>
     </main>
+
     <footer>
         <h3>Desenvolvido com ❤️ by Maria Viana</h3>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
